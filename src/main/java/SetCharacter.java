@@ -1,11 +1,10 @@
-import lombok.Data;
+import org.apache.commons.lang3.builder.EqualsBuilder;
 
-@Data
-public final class SetCharacter<T> { // final won't let inherit
+public interface SetCharacter <T> {
 
-    private final T value; //immutable class
+    T getValue();
 
-    public SetCharacter(char c) { //is c number or string
-        this.value = value;
+    default boolean isSameCharacter(SetCharacter<?> outer){
+        return EqualsBuilder.reflectionEquals(getValue(), other.getValue());
     }
 }
