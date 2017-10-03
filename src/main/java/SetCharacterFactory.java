@@ -33,7 +33,7 @@ public class SetCharacterFactory { //object-oriented design pattern
     }
 
     @Data
-    private class IntegerCharacter implements SetCharacter<Integer> {
+    class IntegerCharacter implements SetCharacter<Integer> {
 
         private final int value;
 
@@ -44,7 +44,7 @@ public class SetCharacterFactory { //object-oriented design pattern
     }
 
     @Data
-    private class AlphaCharacter implements SetCharacter<String> {
+    class AlphaCharacter implements SetCharacter<String> {
 
         private final String value;
 

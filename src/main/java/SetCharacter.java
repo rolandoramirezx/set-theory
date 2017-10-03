@@ -4,7 +4,7 @@ public interface SetCharacter <T> {
 
     T getValue();
 
-    default boolean isSameCharacter(SetCharacter<?> outer){
+    default boolean isSameCharacter(SetCharacter<?> other){
         return EqualsBuilder.reflectionEquals(getValue(), other.getValue());
     }
 }
