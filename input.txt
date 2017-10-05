@@ -1,0 +1,4 @@
+ABCDEF // neither
+123456 // niether
+ABBBAA // reflexive
+ABBABB // symmetric
