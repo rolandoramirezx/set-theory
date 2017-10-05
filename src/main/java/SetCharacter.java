@@ -1,6 +1,6 @@
 import org.apache.commons.lang3.builder.EqualsBuilder;
 
-public interface SetCharacter <T> {
+public interface SetCharacter<T> extends Comparable<SetCharacter<T>>{
 
     T getValue();
 

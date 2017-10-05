@@ -1,3 +1,4 @@
+import com.google.common.collect.ComparisonChain;
 import lombok.Data;
 
 import static com.google.common.base.Preconditions.checkArgument;
@@ -41,6 +42,11 @@ public class SetCharacterFactory { //object-oriented design pattern
         public Integer getValue() {
             return value;
         }
+
+        @Override
+        public int compareTo(SetCharacter<Integer> o) {
+            return ComparisonChain.start().compare(getValue(), o.getValue()).result();
+        }
     }
 
     @Data
@@ -51,6 +57,11 @@ public class SetCharacterFactory { //object-oriented design pattern
         @Override
         public String getValue() {
             return value;
+        }
+
+        @Override
+        public int compareTo(SetCharacter<String> o) {
+            return ComparisonChain.start().compare(getValue(), o.getValue()).result();
         }
     }
 }
