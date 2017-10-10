@@ -15,6 +15,15 @@ public class ReflectiveSet {
 
     @Getter
     private boolean valid;
+<<<<<<< HEAD
+=======
+    
+     //Add test case to ReflectiveSetTest.java
+    //Write a unit test for this method
+    //Make sure it throws illegalArugmentExcpetion when chracters.size() isn't an even number
+    //Make sure that characters and this.characters contain the same elements in the same order
+    //http://joel-costigliola.github.io/assertj/assertj-core.html
+>>>>>>> b6458cabb16e92f90145ad3da5074e0cb8c0160f
 
     public ReflectiveSet(Collection<SetCharacter<?>> characters) {
         checkArgument(characters.size() % 2 == 0, "Requires even size");
