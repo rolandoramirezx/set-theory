@@ -1,12 +1,16 @@
+package settheory;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import settheory.SetCharacter;
+import settheory.SetCharacterFactory;
+import settheory.SymmetricSet;
 
 import java.util.Collection;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.testng.Assert.*;
 
 public class SymmetricSetTest {
 

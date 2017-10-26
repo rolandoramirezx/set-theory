@@ -1,3 +1,5 @@
+package settheory;
+
 import com.google.common.collect.ComparisonChain;
 import lombok.Data;
 

@@ -6,7 +6,7 @@
 
     <groupId>com.rolandoramirezx.settheory</groupId>
     <artifactId>set-theory</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
@@ -55,7 +55,7 @@
     </dependencies>
 
     <build>
-        <finalName>SetTheory</finalName>
+        <finalName>settheory.SetTheory</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -84,7 +84,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>SetTheory</mainClass>
+                    <mainClass>settheory.SetTheory</mainClass>
                 </configuration>
             </plugin>
 
@@ -101,7 +101,7 @@
                     <!-- MainClass in mainfest make a executable jar -->
                     <archive>
                         <manifest>
-                            <mainClass>SetTheory</mainClass>
+                            <mainClass>settheory.SetTheory</mainClass>
                         </manifest>
                     </archive>
 

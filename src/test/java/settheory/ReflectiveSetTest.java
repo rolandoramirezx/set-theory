@@ -1,5 +1,10 @@
+package settheory;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import settheory.ReflectiveSet;
+import settheory.SetCharacter;
+import settheory.SetCharacterFactory;
 
 import java.util.Collection;
 import java.util.stream.Stream;
@@ -30,15 +35,15 @@ public class ReflectiveSetTest {
         Stream<String> characterStream = input.chars().mapToObj(i -> Character.toString((char) i));
         Collection<SetCharacter<?>> characters = characterStream.map(SetCharacterFactory.getInstance()::of).collect(toList());
 
-        //Create a new ReflectiveSet object. Pass characters to its constructor
+        //Create a new settheory.ReflectiveSet object. Pass characters to its constructor
 
-        //ReflectiveSet set = new ReflectiveSet(characters);
+        //settheory.ReflectiveSet set = new settheory.ReflectiveSet(characters);
 
-        //Next, call process() on your ReflectiveSet object
+        //Next, call process() on your settheory.ReflectiveSet object
 
        // set.process();
 
-        //finally, assert that ReflectiveSet.isValid == result, using assertThat
+        //finally, assert that settheory.ReflectiveSet.isValid == result, using assertThat
 
         //assertThat(set.isValid()).isEqualTo(result);
 

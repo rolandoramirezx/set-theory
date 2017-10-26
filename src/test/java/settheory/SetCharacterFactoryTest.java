@@ -1,10 +1,13 @@
+package settheory;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import settheory.SetCharacter;
+import settheory.SetCharacterFactory;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.testng.Assert.*;
 
 public class SetCharacterFactoryTest {
 

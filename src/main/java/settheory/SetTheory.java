@@ -1,3 +1,5 @@
+package settheory;
+
 import lombok.extern.apachecommons.CommonsLog;
 import org.apache.commons.cli.*;
 
@@ -35,7 +37,7 @@ public class SetTheory {
             }
         } catch (ParseException e) {
             HelpFormatter formatter = new HelpFormatter();
-            formatter.printHelp("SetTheory", options);
+            formatter.printHelp("settheory.SetTheory", options);
         }
     }
 

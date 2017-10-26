@@ -1,3 +1,5 @@
+package settheory;
+
 public interface SetCharacter<T> extends Comparable<SetCharacter<T>>{
 
     T getValue();
